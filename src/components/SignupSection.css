@@ -1,0 +1,120 @@
+
+.signup-section
+{
+    
+    height: 90vh;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.signup-container{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 85%;
+    background-color: #1c2237;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 6px 20px rgba(56,125,255,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.signup-heading{
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    font-size: 36px;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #fff; */
+    width: 60%;
+    height: 60%;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.signup-input{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.signup-input::placeholder{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.signup-text{
+    font-size: 9px;
+    letter-spacing: 0.5px;
+    /* border: 1px solid white; */
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signup-text span{
+    color: #276afb;
+    cursor: pointer;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.signup-btn{
+    background-color: #276afb;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 20px;
+    border: 1px solid #276afb;
+    transition: all 0.3s ease-out;
+    font-size: 18px;
+    width: 60%;
+    margin: 15px auto;
+    text-transform: uppercase;
+}
+
+.signup-btn:hover{
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+@media screen and (max-width:800px) {
+    .signup-container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:440px){
+    .signup-text{
+        width: 100%;
+        /* letter-spacing: 0; */
+        font-size: 8px;
+    }
+
+    .signup-btn{
+        font-size: 16px;
+        width: 70%;
+    }
+
+    .signup-heading{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .signup-btn{
+        width: 80%;
+    }
+}
